@@ -1,0 +1,4 @@
+Hyphenation patterns for Bahasa Indonesia
+Copyright (C) 2025 Generated from KBBI 2025 data
+Based on KBBI hyphenation data with 72,000+ verified words.
+licence: MIT
