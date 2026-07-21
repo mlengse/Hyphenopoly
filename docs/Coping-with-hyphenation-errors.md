@@ -57,7 +57,7 @@ __contra:__
 - has no effect in the long term (others will not benefit)
 
 ### Define hyphenation exceptions.
-Hyphenopoly.js has an [API for hyphenation exceptions](https://github.com/mnater/Hyphenopoly/wiki/Setup#exceptions):
+Hyphenopoly.js has an [API for hyphenation exceptions](https://github.com/mlengse/Hyphenopoly/wiki/Setup#exceptions):
 
 ````javascript
 Hyphenopoly.config({
@@ -91,5 +91,5 @@ __contra:__
 - fixing patterns often takes a long time (not all patterns are actively maintained)
 - fixing the patterns often requires extended knowledge
 
-As an intermediate step to improved patterns, Hyphenopoly has the ability to include exceptions in the wasm-file. Feel free to [open an issue](https://github.com/mnater/Hyphenopoly/issues) if you have a good list
+As an intermediate step to improved patterns, Hyphenopoly has the ability to include exceptions in the wasm-file. Feel free to [open an issue](https://github.com/mlengse/Hyphenopoly/issues) if you have a good list
 of exceptions for a language.

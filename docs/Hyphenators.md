@@ -133,7 +133,7 @@ runHyphenator("hyphenateme");
 # Use case: Hyphenopoly in react
 `hyphenators` are very important in dynamically generated web-content (web-apps). The following describes some first steps in how to use Hyphenopoly in react-apps. Please note that I'm not an expert in react.js If you find a better way, I'd highly appreciate your ideas.
 
-1. [download](https://github.com/mnater/Hyphenopoly/releases/latest) and copy the latest version of Hyphenopoly to your react's `public` folder.
+1. [download](https://github.com/mlengse/Hyphenopoly/releases/latest) and copy the latest version of Hyphenopoly to your react's `public` folder.
 
 2. Configure `window.Hyphenopoly` and load `Hyphenopoly_Loader.js` in your react's index.html:
 

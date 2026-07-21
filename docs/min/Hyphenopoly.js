@@ -1,7 +1,7 @@
 /**
  * @license Hyphenopoly 6.0.0 - client side hyphenation for webbrowsers
  * ©2024  Mathias Nater, Güttingen (mathiasnater at gmail dot com)
- * https://github.com/mnater/Hyphenopoly
+ * https://github.com/mlengse/Hyphenopoly
  *
  * Released under the MIT license
  * http://mnater.github.io/Hyphenopoly/LICENSE

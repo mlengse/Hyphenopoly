@@ -15,11 +15,11 @@
     "Webassembly"
   ],
   "homepage": "https://mnater.github.io/Hyphenopoly/",
-  "bugs": "https://github.com/mnater/Hyphenopoly/issues",
+  "bugs": "https://github.com/mlengse/Hyphenopoly/issues",
   "license": "MIT",
   "author": {
-    "name": "Mathias Nater",
-    "email": "mathiasnater@gmail.com"
+    "name": "mLengse",
+    "email": "medotsys@gmail.com"
   },
   "files": [
     "Hyphenopoly_Loader.js",
@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mnater/Hyphenopoly"
+    "url": "https://github.com/mlengse/Hyphenopoly"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^2.12.1",

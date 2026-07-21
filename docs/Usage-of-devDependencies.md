@@ -8,7 +8,7 @@ You need [git](https://git-scm.com/downloads) and [node.js with npm.js](https://
 ### Clone repository from GitHub
 Use
 
-`git clone https://github.com/mnater/Hyphenopoly.git`
+`git clone https://github.com/mlengse/Hyphenopoly.git`
 
 to [clone](https://git-scm.com/docs/git-clone) the current development status (HEAD) of Hyphenopoly.js (this has the newest features, but is not fully tested).
 
@@ -20,7 +20,7 @@ Use this to create pull-requests or to fork the repository.
 
 While cloning gives you the most recent status, downloading a tagged release gives you a more thoughtfully tested (but never error-free) version of Hyphenopoly.
 
-1. Go to [https://github.com/mnater/Hyphenopoly/releases/latest](https://github.com/mnater/Hyphenopoly/releases/latest) and download the package.
+1. Go to [https://github.com/mlengse/Hyphenopoly/releases/latest](https://github.com/mlengse/Hyphenopoly/releases/latest) and download the package.
 2. Unpack the package.
 
 This will create a directory called `Hyphenopoly` in your current working directory containing all the files on the Hyphenopoly-GitHub-Repository. Those files are __NOT__ 'connected' to the repository (you can't do `git pull` and a like).
