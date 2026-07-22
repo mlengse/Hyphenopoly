@@ -1,0 +1,143 @@
+TAP version 14
+# Subtest: run config with one language
+    # Subtest: return a function
+        ok 1 - function
+        1..1
+    ok 1 - return a function # time=3.386ms
+    
+    # Subtest: hyphenate one word
+        ok 1 - Sil­ben­tren­nung
+        1..1
+    ok 2 - hyphenate one word # time=2.633ms
+    
+    # Subtest: hyphenate two words
+        ok 1 - Sil­ben­tren­nung Al­go­rith­mus
+        1..1
+    ok 3 - hyphenate two words # time=1.129ms
+    
+    1..3
+ok 1 - run config with one language # time=215.112ms
+
+# Subtest: substitue characters
+    # Subtest: hyphenate Béchamel
+        ok 1 - Bé­cha­mel
+        1..1
+    ok 1 - hyphenate Béchamel # time=0.964ms
+    
+    1..1
+ok 2 - substitue characters # time=12.939ms
+
+# Subtest: substitue characters unicase
+    # Subtest: hyphenate 1337speak
+        ok 1 - 48­501u73
+        1..1
+    ok 1 - hyphenate 1337speak # time=5.54ms
+    
+    1..1
+ok 3 - substitue characters unicase # time=61.091ms
+
+# Subtest: try to hyphenate a word outside alphabet
+    # Subtest: hyphenate ångström
+        ok 1 - ångström
+        1..1
+    ok 1 - hyphenate ångström # time=0.832ms
+    
+    1..1
+ok 4 - try to hyphenate a word outside alphabet # time=14.382ms
+
+# Subtest: disable Webassembly.Globals
+    # Subtest: hyphenate one word with Globals disabled
+        ok 1 - Sil­ben­tren­nung
+        1..1
+    ok 1 - hyphenate one word with Globals disabled # time=1.057ms
+    
+    1..1
+ok 5 - disable Webassembly.Globals # time=16.817ms
+
+# Subtest: run config with two languages
+    # Subtest: return a Map
+        ok 1 - type is Map
+        1..1
+    ok 1 - return a Map # time=1.22ms
+    
+    # Subtest: get the hyphenator function promise for a language
+        ok 1 - type is Promise
+        1..1
+    ok 2 - get the hyphenator function promise for a language # time=0.547ms
+    
+    # Subtest: get the hyphenator function for a language
+        ok 1 - type is Function
+        1..1
+    ok 3 - get the hyphenator function for a language # time=8.875ms
+    
+    # Subtest: hyphenate one word of the first language
+        ok 1 - Sil­ben­tren­nung
+        1..1
+    ok 4 - hyphenate one word of the first language # time=0.799ms
+    
+    # Subtest: hyphenate two words of the first language
+        ok 1 - Sil­ben­tren­nung Al­go­rith­mus
+        1..1
+    ok 5 - hyphenate two words of the first language # time=0.512ms
+    
+    # Subtest: hyphenate one word of the second language
+        ok 1 - hy­phen­ation
+        1..1
+    ok 6 - hyphenate one word of the second language # time=1.956ms
+    
+    # Subtest: hyphenate two words of the second language
+        ok 1 - hy­phen­ation al­go­rithm
+        1..1
+    ok 7 - hyphenate two words of the second language # time=1.039ms
+    
+    1..7
+ok 6 - run config with two languages # time=30.041ms
+
+# Subtest: run config with two same languages
+    # Subtest: return a function
+        ok 1 - function
+        1..1
+    ok 1 - return a function # time=0.502ms
+    
+    # Subtest: hyphenate one word
+        ok 1 - Sil­ben­tren­nung
+        1..1
+    ok 2 - hyphenate one word # time=0.636ms
+    
+    # Subtest: hyphenate two words
+        ok 1 - Sil­ben­tren­nung Al­go­rith­mus
+        1..1
+    ok 3 - hyphenate two words # time=0.843ms
+    
+    1..3
+ok 7 - run config with two same languages # time=17.247ms
+
+# Subtest: use language with private use subtag
+    # Subtest: hyphenate one word
+        ok 1 - Au­to­ren­le­sung
+        1..1
+    ok 1 - hyphenate one word # time=0.999ms
+    
+    1..1
+ok 8 - use language with private use subtag # time=12.752ms
+
+# Subtest: run config with Indonesian language
+    # Subtest: return a function
+        ok 1 - function
+        1..1
+    ok 1 - return a function # time=1.074ms
+    
+    # Subtest: hyphenate one word
+        ok 1 - In­do­ne­sia
+        1..1
+    ok 2 - hyphenate one word # time=1.464ms
+    
+    # Subtest: hyphenate two words
+        ok 1 - In­do­ne­sia ada­lah
+        1..1
+    ok 3 - hyphenate two words # time=2.143ms
+    
+    1..3
+ok 9 - run config with Indonesian language # time=20.895ms
+
+1..9
