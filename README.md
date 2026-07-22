@@ -66,6 +66,7 @@ Also, don't forget to enable CSS hyphenation.
             <p lang="la">Qua de causa Helvetii quoque reliquos Gallos virtute praecedunt, quod fere cotidianis proeliis cum Germanis contendunt, cum aut suis finibus eos prohibent aut ipsi in eorum finibus bellum gerunt.</p>
             <p lang="en-us">For which reason the Helvetii also surpass the rest of the Gauls in valor, as they contend with the Germans in almost daily battles, when they either repel them from their own territories, or themselves wage war on their frontiers.</p>
             <p lang="de">Aus diesem Grund übertreffen auch die Helvetier die übrigen Gallier an Tapferkeit, weil sie sich in fast täglichen Gefechten mit den Germanen messen, wobei sie diese entweder von ihrem Gebiet fernhalten oder selbst in deren Gebiet kämpfen.</p>
+            <p lang="id">Tipografi, seni cetak atau tata huruf adalah suatu kesenian dan teknik memilih dan menata huruf dengan pengaturan penyebarannya pada ruang yang tersedia.</p>
         </div>
     </body>
 </html>
@@ -114,7 +115,7 @@ const hyphenator = hyphenopoly.config({
         const {readFile} = await import("node:fs/promises");
         return readFile(new URL(file, patDir));
     },
-    "require": ["de", "en-us"]
+    "require": ["de", "en-us", "id"]
 });
 
 async function hyphenateEn(text) {
@@ -127,8 +128,14 @@ async function hyphenateDe(text) {
     console.log(hyphenateText(text));
 }
 
+async function hyphenateId(text) {
+    const hyphenateText = await hyphenator.get("id");
+    console.log(hyphenateText(text));
+}
+
 hyphenateEn("hyphenation enhances justification.");
 hyphenateDe("Silbentrennung verbessert den Blocksatz.");
+hyphenateId("Tipografi adalah seni dan teknik memilih dan menata huruf.");
 ````
 
 ## Support this project

@@ -1,5 +1,3 @@
-/* eslint-env node */
-/* eslint global-require: 0, func-names: 0, no-shadow: 0 */
 /* eslint-disable prefer-arrow-callback */
 
 import t from "tap";
@@ -203,8 +201,8 @@ t.test("Indonesian kata majemuk (compound words with hyphen)", async function (t
 t.test("Indonesian full paragraph from testsuite", async function (t) {
     const H9Y = await freshImport();
     const hc = H9Y.config({
-        loader,
         "hyphen": "|",
+        loader,
         "require": ["id"]
     });
     const idHyphenator = await hc.get("id");
@@ -306,6 +304,44 @@ t.test("Indonesian: leftmin and rightmin", async function (t) {
     });
     t.test("apply leftmin: teknologi", function (t) {
         t.equal(idHyphenator("teknologi"), "tekno|logi", idHyphenator("teknologi"));
+        t.end();
+    });
+    t.end();
+});
+
+t.test("Indonesian: special characters", async function (t) {
+    const H9Y = await freshImport();
+    const hc = H9Y.config({
+        loader,
+        "require": ["id"]
+    });
+    const idHyphenator = await hc.get("id");
+    t.test("kata dengan angka: RT01/RW02", function (t) {
+        t.equal(idHyphenator("RT01/RW02"), "RT01/RW02", idHyphenator("RT01/RW02"));
+        t.end();
+    });
+    t.test("kata dengan angka: 12345", function (t) {
+        t.equal(idHyphenator("12345"), "12345", idHyphenator("12345"));
+        t.end();
+    });
+    t.test("kata dengan angka: UUD1945", function (t) {
+        t.equal(idHyphenator("UUD1945"), "UUD1945", idHyphenator("UUD1945"));
+        t.end();
+    });
+    t.test("singkatan: dll.", function (t) {
+        t.equal(idHyphenator("dll."), "dll.", idHyphenator("dll."));
+        t.end();
+    });
+    t.test("singkatan: dst.", function (t) {
+        t.equal(idHyphenator("dst."), "dst.", idHyphenator("dst."));
+        t.end();
+    });
+    t.test("kata dengan tanda seru: hebat!", function (t) {
+        t.equal(idHyphenator("hebat!"), "hebat!", idHyphenator("hebat!"));
+        t.end();
+    });
+    t.test("kata dengan tanda tanya: apa?", function (t) {
+        t.equal(idHyphenator("apa?"), "apa?", idHyphenator("apa?"));
         t.end();
     });
     t.end();
