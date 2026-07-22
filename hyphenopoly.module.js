@@ -8,8 +8,6 @@
  * http://mnater.github.io/Hyphenopoly/LICENSE
  */
 
-/* eslint-env node */
-
 const decode = (() => {
     const utf16ledecoder = new TextDecoder("utf-16le");
     return (ui16) => {

@@ -1,5 +1,6 @@
 import eslint from '@eslint/js';
 import globals from 'globals';
+import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 import security from "eslint-plugin-security";
 import stylistic from '@stylistic/eslint-plugin';
@@ -81,6 +82,8 @@ const jsConfigs = [
             "func-names": [1, "as-needed"],
             "func-style": [1, "declaration", {"allowArrowFunctions": true}],
             "id-length": 0,
+            "jsdoc/reject-any-type": 0,
+            "jsdoc/reject-function-type": 0,
             "jsdoc/require-jsdoc": [
                 1,
                 {
@@ -107,6 +110,7 @@ const jsConfigs = [
                 }
             ],
             "no-template-curly-in-string": 2,
+            "no-useless-assignment": 0,
             "object-shorthand": 1,
             "one-var": 0,
             "prefer-arrow-callback": 1,
@@ -114,7 +118,7 @@ const jsConfigs = [
             "prefer-named-capture-group": 0,
             "prefer-template": 0,
             "require-unicode-regexp": 0,
-            "sort-keys": [1, "asc", {"caseSensitive": false}]
+            "sort-keys": [1, "asc", {"caseSensitive": false}],
         }
     },
     {
@@ -140,17 +144,17 @@ const jsConfigs = [
     }
 ];
 
-const asConfigs = tseslint.config({
+const asConfigs = defineConfig({
     "extends": [
         eslint.configs.recommended,
-        ...tseslint.configs.strictTypeChecked,
-        ...tseslint.configs.stylisticTypeChecked,
+        tseslint.configs.strictTypeChecked,
+        tseslint.configs.stylisticTypeChecked,
     ],
     "files": ["**/*.ts"],
     languageOptions: {
         parser: tseslint.parser,
         parserOptions: {
-          project: true,
+            projectService: true,
         },
       },
     "rules": {
@@ -162,6 +166,7 @@ const asConfigs = tseslint.config({
         ],
         "jsdoc/require-jsdoc": 0,
         "no-bitwise": 0,
+        "no-useless-assignment": 0,
     },
 });
 
