@@ -1,12 +1,8 @@
 import * as fs from "fs";
 import t from "tap";
 
-const TD = typeof TextDecoder === "undefined"
-    ? require("util").TextDecoder
-    : TextDecoder;
-
 const decode = (() => {
-    const utf16ledecoder = new TD("utf-16le");
+    const utf16ledecoder = new TextDecoder("utf-16le");
     return (ui16) => {
         return utf16ledecoder.decode(ui16);
     };

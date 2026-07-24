@@ -5,6 +5,8 @@
 import {readFileSync} from "node:fs";
 import t from "tap";
 
+const CDN_VERSION = "6.1.0";
+
 /**
  * Imports and returns the defaults of the hyphenopoly module.
  * Circumvents module caching by appending a query to the URL
@@ -19,7 +21,7 @@ async function freshImport() {
 async function https(file) {
     const https = await import("node:https");
     return new Promise((resolve, reject) => {
-        https.get(`https://cdn.jsdelivr.net/npm/hyphenopoly@6.0.0/patterns/${file}`, (res) => {
+        https.get(`https://cdn.jsdelivr.net/npm/hyphenopoly@${CDN_VERSION}/patterns/${file}`, (res) => {
             const rawData = [];
             res.on("data", (chunk) => {
                 rawData.push(chunk);
@@ -56,7 +58,7 @@ t.test("use https loader", async function (t) {
 });
 
 function fetcher(file) {
-    return fetch(`https://cdn.jsdelivr.net/npm/hyphenopoly@6.0.0/patterns/${file}`).then((response) => {
+    return fetch(`https://cdn.jsdelivr.net/npm/hyphenopoly@${CDN_VERSION}/patterns/${file}`).then((response) => {
         return response.arrayBuffer();
     });
 }

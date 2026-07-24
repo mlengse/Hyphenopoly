@@ -4,7 +4,17 @@
 import {Transform} from "assemblyscript/transform";
 import fs from "fs";
 
-const lang = fs.readFileSync("./lang.txt", "utf8");
+if (!fs.existsSync("./lang.txt")) {
+    throw new Error(
+        "lang.txt not found. Run createWasmForLang.sh <lang> first."
+    );
+}
+const lang = fs.readFileSync("./lang.txt", "utf8").trim();
+if (!fs.existsSync(`./${lang}.data`)) {
+    throw new Error(
+        `${lang}.data not found. Run createWasmData.js for language "${lang}" first.`
+    );
+}
 const data = fs.readFileSync(`./${lang}.data`);
 
 const dataOffset = 2176;

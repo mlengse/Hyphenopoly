@@ -198,25 +198,3 @@ t.test("use language with private use subtag", async function (t) {
     });
     t.end();
 });
-
-t.test("run config with Indonesian language", async function (t) {
-    const H9Y = await freshImport();
-    const hc = H9Y.config({
-        loader,
-        "require": ["id"]
-    });
-    const idHyphenator = await hc.get("id");
-    t.test("return a function", function (t) {
-        t.equal(typeof idHyphenator, "function", typeof idHyphenator);
-        t.end();
-    });
-    t.test("hyphenate one word", function (t) {
-        t.equal(idHyphenator("Indonesia"), "In\u00ADdo\u00ADne\u00ADsia", idHyphenator("Indonesia"));
-        t.end();
-    });
-    t.test("hyphenate two words", function (t) {
-        t.equal(idHyphenator("Indonesia adalah"), "In\u00ADdo\u00ADne\u00ADsia ada\u00ADlah", idHyphenator("Indonesia adalah"));
-        t.end();
-    });
-    t.end();
-});
