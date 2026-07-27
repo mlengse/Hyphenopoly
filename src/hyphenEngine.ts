@@ -61,7 +61,7 @@
  * USAGE:
  * Each module created from this source is language specific.
  * 1. Write a UTF-16 String to memory starting at index 0 (64 chars max)
- * 2. Call hyphenate(), which returns the lenght of the hyphenated string
+ * 2. Call hyphenate(), which returns the length of the hyphenated string
  * 3. Read the hyphenated UTF-16 string from memory starting at index 0
  *
  * INTERNALS:

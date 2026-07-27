@@ -24,6 +24,7 @@
   "files": [
     "Hyphenopoly_Loader.js",
     "Hyphenopoly.js",
+    "hyphenopoly.module.js",
     "patterns/",
     "min/Hyphenopoly_Loader.js",
     "min/Hyphenopoly.js",

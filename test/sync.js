@@ -1,8 +1,8 @@
 /* eslint global-require: 0, func-names: 0, no-shadow: 0 */
 /* eslint-disable prefer-arrow-callback */
 
-import {dirname} from "path";
-import {fileURLToPath} from "url";
+import {dirname} from "node:path";
+import {fileURLToPath} from "node:url";
 import {readFileSync} from "node:fs";
 import t from "tap";
 

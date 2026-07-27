@@ -45,7 +45,7 @@ t.test("run config with one language", async function (t) {
     t.end();
 });
 
-t.test("substitue characters", async function (t) {
+t.test("substitute characters", async function (t) {
     const H9Y = await freshImport();
     const hc = H9Y.config({
         loader,
@@ -64,7 +64,7 @@ t.test("substitue characters", async function (t) {
     t.end();
 });
 
-t.test("substitue characters unicase", async function (t) {
+t.test("substitute characters unicase", async function (t) {
     const H9Y = await freshImport();
     const hc = H9Y.config({
         loader,

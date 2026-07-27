@@ -657,7 +657,7 @@ H.config = ((userConfig) => {
     if (settings.require.length === 0) {
         events.dispatch(
             "error",
-            {"msg": "No language has been required. Setup config according to documenation."}
+            {"msg": "No language has been required. Setup config according to documentation."}
         );
     }
     settings.require.forEach((lang) => {

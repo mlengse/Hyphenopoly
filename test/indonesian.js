@@ -1,3 +1,4 @@
+/* eslint func-names: 0 */
 /* eslint-disable prefer-arrow-callback */
 
 import t from "tap";
@@ -292,8 +293,8 @@ t.test("Indonesian: leftmin and rightmin", async function (t) {
     const H9Y = await freshImport();
     const hc = H9Y.config({
         "hyphen": "|",
-        loader,
         "leftmin": 4,
+        loader,
         "require": ["id"],
         "rightmin": 4
     });

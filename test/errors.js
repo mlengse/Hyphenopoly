@@ -102,7 +102,7 @@ t.test("incomplete setup (forget require)", async function (t) {
     t.end();
 });
 
-t.test("fail when word is to long", async function (t) {
+t.test("fail when word is too long", async function (t) {
     const H9Y = await freshImport();
     const hc = H9Y.config({
         loader,
