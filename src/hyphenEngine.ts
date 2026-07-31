@@ -444,11 +444,13 @@ export function hyphenate(lmin: i32, rmin: i32, hc: i32): i32 {
             (charOffset + hyphenPointsCount) << 1,
             load<u16>(charOffset << 1, originalWordOffset)
         );
-        if ((charOffset >= lmin - 1) && (charOffset <= rmin)) {
-            if (load<u8>(charOffset, hp + 2) & 1) {
-                hyphenPointsCount += 1;
-                store<u16>((charOffset + hyphenPointsCount) << 1, hc);
-            }
+        const hpVal: u8 = load<u8>(charOffset, hp + 2);
+        const inRange = charOffset >= lmin - 1 && charOffset <= rmin;
+        const exceptionHit = hpVal >= 11;
+        const patternHit = (hpVal & 1) === 1 && inRange;
+        if (charOffset <= wordLength - 2 && (exceptionHit || patternHit)) {
+            hyphenPointsCount += 1;
+            store<u16>((charOffset + hyphenPointsCount) << 1, hc);
         }
         charOffset += 1;
     }

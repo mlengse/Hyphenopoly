@@ -39,7 +39,7 @@ t.test("run config with Indonesian language", async function (t) {
         t.end();
     });
     t.test("hyphenate one word: adalah", function (t) {
-        t.equal(idHyphenator("adalah"), "ada\u00ADlah", idHyphenator("adalah"));
+        t.equal(idHyphenator("adalah"), "a\u00ADda\u00ADlah", idHyphenator("adalah"));
         t.end();
     });
     t.test("hyphenate one word: kesenian", function (t) {
@@ -55,15 +55,15 @@ t.test("run config with Indonesian language", async function (t) {
         t.end();
     });
     t.test("hyphenate one word: dengan", function (t) {
-        t.equal(idHyphenator("dengan"), "den\u00ADgan", idHyphenator("dengan"));
+        t.equal(idHyphenator("dengan"), "de\u00ADngan", idHyphenator("dengan"));
         t.end();
     });
     t.test("hyphenate one word: pengaturan", function (t) {
-        t.equal(idHyphenator("pengaturan"), "pen\u00ADga\u00ADtu\u00ADran", idHyphenator("pengaturan"));
+        t.equal(idHyphenator("pengaturan"), "peng\u00ADa\u00ADtur\u00ADan", idHyphenator("pengaturan"));
         t.end();
     });
     t.test("hyphenate one word: tersedia", function (t) {
-        t.equal(idHyphenator("tersedia"), "ter\u00ADse\u00ADdia", idHyphenator("tersedia"));
+        t.equal(idHyphenator("tersedia"), "ter\u00ADse\u00ADdi\u00ADa", idHyphenator("tersedia"));
         t.end();
     });
     t.test("hyphenate one word: menciptakan", function (t) {
@@ -83,7 +83,7 @@ t.test("run config with Indonesian language", async function (t) {
         t.end();
     });
     t.test("hyphenate two words", function (t) {
-        t.equal(idHyphenator("Tipografi adalah"), "Ti\u00ADpo\u00ADgra\u00ADfi ada\u00ADlah", idHyphenator("Tipografi adalah"));
+        t.equal(idHyphenator("Tipografi adalah"), "Ti\u00ADpo\u00ADgra\u00ADfi a\u00ADda\u00ADlah", idHyphenator("Tipografi adalah"));
         t.end();
     });
     t.end();
@@ -97,11 +97,11 @@ t.test("Indonesian kata dasar (base words)", async function (t) {
     });
     const idHyphenator = await hc.get("id");
     t.test("hyphenate Indonesia", function (t) {
-        t.equal(idHyphenator("Indonesia"), "In\u00ADdo\u00ADne\u00ADsia", idHyphenator("Indonesia"));
+        t.equal(idHyphenator("Indonesia"), "In\u00ADdo\u00ADne\u00ADsi\u00ADa", idHyphenator("Indonesia"));
         t.end();
     });
     t.test("hyphenate pendidikan", function (t) {
-        t.equal(idHyphenator("pendidikan"), "pen\u00ADdi\u00ADdi\u00ADkan", idHyphenator("pendidikan"));
+        t.equal(idHyphenator("pendidikan"), "pen\u00ADdi\u00ADdik\u00ADan", idHyphenator("pendidikan"));
         t.end();
     });
     t.test("hyphenate teknologi", function (t) {
@@ -127,19 +127,19 @@ t.test("Indonesian kata berimbuhan (affixed words)", async function (t) {
     });
     const idHyphenator = await hc.get("id");
     t.test("hyphenate mempelajari", function (t) {
-        t.equal(idHyphenator("mempelajari"), "mem\u00ADpe\u00ADla\u00ADja\u00ADri", idHyphenator("mempelajari"));
+        t.equal(idHyphenator("mempelajari"), "mem\u00ADpel\u00ADa\u00ADjar\u00ADi", idHyphenator("mempelajari"));
         t.end();
     });
     t.test("hyphenate kependidikan", function (t) {
-        t.equal(idHyphenator("kependidikan"), "ke\u00ADpen\u00ADdi\u00ADdi\u00ADkan", idHyphenator("kependidikan"));
+        t.equal(idHyphenator("kependidikan"), "ke\u00ADpen\u00ADdi\u00ADdik\u00ADan", idHyphenator("kependidikan"));
         t.end();
     });
     t.test("hyphenate pemerintahan", function (t) {
-        t.equal(idHyphenator("pemerintahan"), "pe\u00ADme\u00ADrin\u00ADta\u00ADhan", idHyphenator("pemerintahan"));
+        t.equal(idHyphenator("pemerintahan"), "pe\u00ADme\u00ADrin\u00ADtah\u00ADan", idHyphenator("pemerintahan"));
         t.end();
     });
     t.test("hyphenate belajar", function (t) {
-        t.equal(idHyphenator("belajar"), "be\u00ADla\u00ADjar", idHyphenator("belajar"));
+        t.equal(idHyphenator("belajar"), "bel\u00ADa\u00ADjar", idHyphenator("belajar"));
         t.end();
     });
     t.test("hyphenate terjadi", function (t) {
@@ -151,7 +151,7 @@ t.test("Indonesian kata berimbuhan (affixed words)", async function (t) {
         t.end();
     });
     t.test("hyphenate pembelajaran", function (t) {
-        t.equal(idHyphenator("pembelajaran"), "pem\u00ADbe\u00ADla\u00ADja\u00ADran", idHyphenator("pembelajaran"));
+        t.equal(idHyphenator("pembelajaran"), "pem\u00ADbel\u00ADa\u00ADjar\u00ADan", idHyphenator("pembelajaran"));
         t.end();
     });
     t.test("hyphenate kemerdekaan", function (t) {
@@ -159,23 +159,23 @@ t.test("Indonesian kata berimbuhan (affixed words)", async function (t) {
         t.end();
     });
     t.test("hyphenate keindahan", function (t) {
-        t.equal(idHyphenator("keindahan"), "ke\u00ADin\u00ADda\u00ADhan", idHyphenator("keindahan"));
+        t.equal(idHyphenator("keindahan"), "ke\u00ADin\u00ADdah\u00ADan", idHyphenator("keindahan"));
         t.end();
     });
     t.test("hyphenate pengembangan", function (t) {
-        t.equal(idHyphenator("pengembangan"), "pen\u00ADgem\u00ADban\u00ADgan", idHyphenator("pengembangan"));
+        t.equal(idHyphenator("pengembangan"), "pe\u00ADngem\u00ADbang\u00ADan", idHyphenator("pengembangan"));
         t.end();
     });
     t.test("hyphenate perkembangan", function (t) {
-        t.equal(idHyphenator("perkembangan"), "per\u00ADkem\u00ADban\u00ADgan", idHyphenator("perkembangan"));
+        t.equal(idHyphenator("perkembangan"), "per\u00ADkem\u00ADbang\u00ADan", idHyphenator("perkembangan"));
         t.end();
     });
     t.test("hyphenate pertumbuhan", function (t) {
-        t.equal(idHyphenator("pertumbuhan"), "per\u00ADtum\u00ADbu\u00ADhan", idHyphenator("pertumbuhan"));
+        t.equal(idHyphenator("pertumbuhan"), "per\u00ADtum\u00ADbuh\u00ADan", idHyphenator("pertumbuhan"));
         t.end();
     });
     t.test("hyphenate kesehatan", function (t) {
-        t.equal(idHyphenator("kesehatan"), "ke\u00ADse\u00ADha\u00ADtan", idHyphenator("kesehatan"));
+        t.equal(idHyphenator("kesehatan"), "ke\u00ADse\u00ADhat\u00ADan", idHyphenator("kesehatan"));
         t.end();
     });
     t.end();
@@ -209,7 +209,7 @@ t.test("Indonesian full paragraph from testsuite", async function (t) {
     const idHyphenator = await hc.get("id");
     t.test("hyphenate full paragraph", function (t) {
         const text = "Tipografi, seni cetak atau tata huruf adalah suatu kesenian dan teknik memilih dan menata huruf dengan pengaturan penyebarannya pada ruang yang tersedia, untuk menciptakan kesan tertentu, guna kenyamanan membaca semaksimal mungkin.";
-        const expected = "Ti|po|gra|fi, seni cetak atau tata huruf ada|lah suatu ke|se|ni|an dan tek|nik me|mi|lih dan me|na|ta huruf den|gan pen|ga|tu|ran pen|ye|ba|rann|ya pada ruang yang ter|se|dia, untuk men|cip|ta|kan kesan ter|ten|tu, guna ken|ya|ma|nan mem|ba|ca se|mak|si|mal mung|kin.";
+        const expected = "Ti|po|gra|fi, seni cetak atau tata huruf a|da|lah suatu ke|se|ni|an dan tek|nik me|mi|lih dan me|na|ta huruf de|ngan peng|a|tur|an pe|nye|bar|an|nya pada ruang yang ter|se|di|a, untuk men|cip|ta|kan kesan ter|ten|tu, guna ke|nya|man|an mem|ba|ca se|mak|si|mal mung|kin.";
         t.equal(idHyphenator(text), expected, idHyphenator(text));
         t.end();
     });

@@ -58,19 +58,22 @@ hypFileLines.forEach((line) => {
         const convertedHyp = ["."];
         const lineChars = line.split("");
         let lastWasHyp = false;
+        // Exceptions are encoded with the highest pattern weights so they
+        // override any conflicting learned pattern (patgen weights go up to 9):
+        // "10" = no break here, "11" = break here.
         lineChars.forEach((c) => {
             if (c === "-") {
-                convertedHyp.push("9");
+                convertedHyp.push("11");
                 lastWasHyp = true;
             } else if (lastWasHyp) {
                 convertedHyp.push(c);
                 lastWasHyp = false;
             } else {
-                convertedHyp.push("8", c);
+                convertedHyp.push("10", c);
                 lastWasHyp = false;
             }
         });
-        convertedHyp.push("8", ".");
+        convertedHyp.push("10", ".");
         patFileLines.push(convertedHyp.join(""));
     }
 });
@@ -88,7 +91,15 @@ patFileLines.forEach((line) => {
             const cc = line.charCodeAt(pos);
             if (cc <= 57 && cc >= 49) {
                 // It's a digit
-                digits.push(cc - 48);
+                const nc = line.charCodeAt(pos + 1);
+                if (nc === 48 || nc === 49) {
+                    // Two-digit value ("10" or "11", only used for exceptions)
+                    digits.push((cc - 48) * 10 + (nc - 48));
+                    pos += 2;
+                } else {
+                    digits.push(cc - 48);
+                    pos += 1;
+                }
                 prevWasChar = false;
             } else {
                 // It's a character
@@ -97,8 +108,8 @@ patFileLines.forEach((line) => {
                     digits.push(0);
                 }
                 prevWasChar = true;
+                pos += 1;
             }
-            pos += 1;
         }
         parsedData.pat.push([line, chars, digits]);
     } else {

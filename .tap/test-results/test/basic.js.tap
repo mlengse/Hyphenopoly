@@ -3,122 +3,122 @@ TAP version 14
     # Subtest: return a function
         ok 1 - function
         1..1
-    ok 1 - return a function # time=6.159ms
+    ok 1 - return a function # time=7.97ms
     
     # Subtest: hyphenate one word
         ok 1 - Sil­ben­tren­nung
         1..1
-    ok 2 - hyphenate one word # time=19.104ms
+    ok 2 - hyphenate one word # time=2.582ms
     
     # Subtest: hyphenate two words
         ok 1 - Sil­ben­tren­nung Al­go­rith­mus
         1..1
-    ok 3 - hyphenate two words # time=0.907ms
+    ok 3 - hyphenate two words # time=1.219ms
     
     1..3
-ok 1 - run config with one language # time=296.576ms
+ok 1 - run config with one language # time=402.997ms
 
 # Subtest: substitute characters
     # Subtest: hyphenate Béchamel
         ok 1 - Bé­cha­mel
         1..1
-    ok 1 - hyphenate Béchamel # time=1.8ms
+    ok 1 - hyphenate Béchamel # time=1.729ms
     
     1..1
-ok 2 - substitute characters # time=30.804ms
+ok 2 - substitute characters # time=104.035ms
 
 # Subtest: substitute characters unicase
     # Subtest: hyphenate 1337speak
         ok 1 - 48­501u73
         1..1
-    ok 1 - hyphenate 1337speak # time=2.275ms
+    ok 1 - hyphenate 1337speak # time=1.886ms
     
     1..1
-ok 3 - substitute characters unicase # time=17.448ms
+ok 3 - substitute characters unicase # time=45.951ms
 
 # Subtest: try to hyphenate a word outside alphabet
     # Subtest: hyphenate ångström
         ok 1 - ångström
         1..1
-    ok 1 - hyphenate ångström # time=0.954ms
+    ok 1 - hyphenate ångström # time=21.406ms
     
     1..1
-ok 4 - try to hyphenate a word outside alphabet # time=16.162ms
+ok 4 - try to hyphenate a word outside alphabet # time=62.567ms
 
 # Subtest: disable Webassembly.Globals
     # Subtest: hyphenate one word with Globals disabled
         ok 1 - Sil­ben­tren­nung
         1..1
-    ok 1 - hyphenate one word with Globals disabled # time=0.907ms
+    ok 1 - hyphenate one word with Globals disabled # time=1.466ms
     
     1..1
-ok 5 - disable Webassembly.Globals # time=16.436ms
+ok 5 - disable Webassembly.Globals # time=88.211ms
 
 # Subtest: run config with two languages
     # Subtest: return a Map
         ok 1 - type is Map
         1..1
-    ok 1 - return a Map # time=0.96ms
+    ok 1 - return a Map # time=1.683ms
     
     # Subtest: get the hyphenator function promise for a language
         ok 1 - type is Promise
         1..1
-    ok 2 - get the hyphenator function promise for a language # time=0.736ms
+    ok 2 - get the hyphenator function promise for a language # time=1.212ms
     
     # Subtest: get the hyphenator function for a language
         ok 1 - type is Function
         1..1
-    ok 3 - get the hyphenator function for a language # time=10.354ms
+    ok 3 - get the hyphenator function for a language # time=58.749ms
     
     # Subtest: hyphenate one word of the first language
         ok 1 - Sil­ben­tren­nung
         1..1
-    ok 4 - hyphenate one word of the first language # time=1.672ms
+    ok 4 - hyphenate one word of the first language # time=1.448ms
     
     # Subtest: hyphenate two words of the first language
         ok 1 - Sil­ben­tren­nung Al­go­rith­mus
         1..1
-    ok 5 - hyphenate two words of the first language # time=0.793ms
+    ok 5 - hyphenate two words of the first language # time=1.04ms
     
     # Subtest: hyphenate one word of the second language
         ok 1 - hy­phen­ation
         1..1
-    ok 6 - hyphenate one word of the second language # time=1.734ms
+    ok 6 - hyphenate one word of the second language # time=1.867ms
     
     # Subtest: hyphenate two words of the second language
         ok 1 - hy­phen­ation al­go­rithm
         1..1
-    ok 7 - hyphenate two words of the second language # time=1.608ms
+    ok 7 - hyphenate two words of the second language # time=11.47ms
     
     1..7
-ok 6 - run config with two languages # time=32.353ms
+ok 6 - run config with two languages # time=114.142ms
 
 # Subtest: run config with two same languages
     # Subtest: return a function
         ok 1 - function
         1..1
-    ok 1 - return a function # time=0.584ms
+    ok 1 - return a function # time=0.958ms
     
     # Subtest: hyphenate one word
         ok 1 - Sil­ben­tren­nung
         1..1
-    ok 2 - hyphenate one word # time=1.021ms
+    ok 2 - hyphenate one word # time=1.426ms
     
     # Subtest: hyphenate two words
         ok 1 - Sil­ben­tren­nung Al­go­rith­mus
         1..1
-    ok 3 - hyphenate two words # time=0.799ms
+    ok 3 - hyphenate two words # time=1.303ms
     
     1..3
-ok 7 - run config with two same languages # time=16.925ms
+ok 7 - run config with two same languages # time=61.386ms
 
 # Subtest: use language with private use subtag
     # Subtest: hyphenate one word
         ok 1 - Au­to­ren­le­sung
         1..1
-    ok 1 - hyphenate one word # time=1.441ms
+    ok 1 - hyphenate one word # time=1.855ms
     
     1..1
-ok 8 - use language with private use subtag # time=13.464ms
+ok 8 - use language with private use subtag # time=25.565ms
 
 1..8
