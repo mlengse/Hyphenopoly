@@ -3,310 +3,409 @@ TAP version 14
     # Subtest: return a function
         ok 1 - function
         1..1
-    ok 1 - return a function # time=4.293ms
+    ok 1 - return a function # time=5.163ms
     
     # Subtest: hyphenate one word: Tipografi
         ok 1 - Ti­po­gra­fi
         1..1
-    ok 2 - hyphenate one word: Tipografi # time=1.631ms
+    ok 2 - hyphenate one word: Tipografi # time=2.043ms
     
     # Subtest: hyphenate one word: adalah
         ok 1 - a­da­lah
         1..1
-    ok 3 - hyphenate one word: adalah # time=0.539ms
+    ok 3 - hyphenate one word: adalah # time=0.733ms
     
     # Subtest: hyphenate one word: kesenian
         ok 1 - ke­se­ni­an
         1..1
-    ok 4 - hyphenate one word: kesenian # time=0.945ms
+    ok 4 - hyphenate one word: kesenian # time=1.174ms
     
     # Subtest: hyphenate one word: teknik
         ok 1 - tek­nik
         1..1
-    ok 5 - hyphenate one word: teknik # time=0.794ms
+    ok 5 - hyphenate one word: teknik # time=1.694ms
     
     # Subtest: hyphenate one word: memilih
         ok 1 - me­mi­lih
         1..1
-    ok 6 - hyphenate one word: memilih # time=0.576ms
+    ok 6 - hyphenate one word: memilih # time=1.153ms
     
     # Subtest: hyphenate one word: dengan
         ok 1 - de­ngan
         1..1
-    ok 7 - hyphenate one word: dengan # time=0.452ms
+    ok 7 - hyphenate one word: dengan # time=1.245ms
     
     # Subtest: hyphenate one word: pengaturan
         ok 1 - peng­a­tur­an
         1..1
-    ok 8 - hyphenate one word: pengaturan # time=0.908ms
+    ok 8 - hyphenate one word: pengaturan # time=1.161ms
     
     # Subtest: hyphenate one word: tersedia
         ok 1 - ter­se­di­a
         1..1
-    ok 9 - hyphenate one word: tersedia # time=0.52ms
+    ok 9 - hyphenate one word: tersedia # time=1.236ms
     
     # Subtest: hyphenate one word: menciptakan
         ok 1 - men­cip­ta­kan
         1..1
-    ok 10 - hyphenate one word: menciptakan # time=0.512ms
+    ok 10 - hyphenate one word: menciptakan # time=1.027ms
     
     # Subtest: hyphenate one word: membaca
         ok 1 - mem­ba­ca
         1..1
-    ok 11 - hyphenate one word: membaca # time=0.47ms
+    ok 11 - hyphenate one word: membaca # time=1.002ms
     
     # Subtest: hyphenate one word: semaksimal
         ok 1 - se­mak­si­mal
         1..1
-    ok 12 - hyphenate one word: semaksimal # time=0.371ms
+    ok 12 - hyphenate one word: semaksimal # time=1.159ms
     
     # Subtest: hyphenate one word: mungkin
         ok 1 - mung­kin
         1..1
-    ok 13 - hyphenate one word: mungkin # time=0.31ms
+    ok 13 - hyphenate one word: mungkin # time=0.861ms
     
     # Subtest: hyphenate two words
         ok 1 - Ti­po­gra­fi a­da­lah
         1..1
-    ok 14 - hyphenate two words # time=0.359ms
+    ok 14 - hyphenate two words # time=0.817ms
     
     1..14
-ok 1 - run config with Indonesian language # time=162.811ms
+ok 1 - run config with Indonesian language # time=555.131ms
 
 # Subtest: Indonesian kata dasar (base words)
     # Subtest: hyphenate Indonesia
         ok 1 - In­do­ne­si­a
         1..1
-    ok 1 - hyphenate Indonesia # time=0.48ms
+    ok 1 - hyphenate Indonesia # time=1.44ms
     
     # Subtest: hyphenate pendidikan
         ok 1 - pen­di­dik­an
         1..1
-    ok 2 - hyphenate pendidikan # time=0.343ms
+    ok 2 - hyphenate pendidikan # time=1.076ms
     
     # Subtest: hyphenate teknologi
         ok 1 - tek­no­lo­gi
         1..1
-    ok 3 - hyphenate teknologi # time=0.333ms
+    ok 3 - hyphenate teknologi # time=1.052ms
     
     # Subtest: hyphenate Negara
         ok 1 - Ne­ga­ra
         1..1
-    ok 4 - hyphenate Negara # time=0.523ms
+    ok 4 - hyphenate Negara # time=0.963ms
     
     # Subtest: hyphenate terbesar
         ok 1 - ter­be­sar
         1..1
-    ok 5 - hyphenate terbesar # time=0.463ms
+    ok 5 - hyphenate terbesar # time=0.984ms
     
     1..5
-ok 2 - Indonesian kata dasar (base words) # time=19.016ms
+ok 2 - Indonesian kata dasar (base words) # time=37.45ms
 
 # Subtest: Indonesian kata berimbuhan (affixed words)
     # Subtest: hyphenate mempelajari
         ok 1 - mem­pel­a­jar­i
         1..1
-    ok 1 - hyphenate mempelajari # time=1.019ms
+    ok 1 - hyphenate mempelajari # time=3.132ms
     
     # Subtest: hyphenate kependidikan
         ok 1 - ke­pen­di­dik­an
         1..1
-    ok 2 - hyphenate kependidikan # time=0.336ms
+    ok 2 - hyphenate kependidikan # time=2.865ms
     
     # Subtest: hyphenate pemerintahan
         ok 1 - pe­me­rin­tah­an
         1..1
-    ok 3 - hyphenate pemerintahan # time=0.442ms
+    ok 3 - hyphenate pemerintahan # time=1.042ms
     
     # Subtest: hyphenate belajar
         ok 1 - bel­a­jar
         1..1
-    ok 4 - hyphenate belajar # time=0.299ms
+    ok 4 - hyphenate belajar # time=0.912ms
     
     # Subtest: hyphenate terjadi
         ok 1 - ter­ja­di
         1..1
-    ok 5 - hyphenate terjadi # time=0.356ms
+    ok 5 - hyphenate terjadi # time=0.877ms
     
     # Subtest: hyphenate pemerintah
         ok 1 - pe­me­rin­tah
         1..1
-    ok 6 - hyphenate pemerintah # time=0.305ms
+    ok 6 - hyphenate pemerintah # time=1.102ms
     
     # Subtest: hyphenate pembelajaran
         ok 1 - pem­bel­a­jar­an
         1..1
-    ok 7 - hyphenate pembelajaran # time=0.289ms
+    ok 7 - hyphenate pembelajaran # time=0.941ms
     
     # Subtest: hyphenate kemerdekaan
         ok 1 - ke­mer­de­ka­an
         1..1
-    ok 8 - hyphenate kemerdekaan # time=0.281ms
+    ok 8 - hyphenate kemerdekaan # time=1.248ms
     
     # Subtest: hyphenate keindahan
         ok 1 - ke­in­dah­an
         1..1
-    ok 9 - hyphenate keindahan # time=0.401ms
+    ok 9 - hyphenate keindahan # time=1.125ms
     
     # Subtest: hyphenate pengembangan
         ok 1 - pe­ngem­bang­an
         1..1
-    ok 10 - hyphenate pengembangan # time=0.381ms
+    ok 10 - hyphenate pengembangan # time=3.103ms
     
     # Subtest: hyphenate perkembangan
         ok 1 - per­kem­bang­an
         1..1
-    ok 11 - hyphenate perkembangan # time=0.695ms
+    ok 11 - hyphenate perkembangan # time=1.047ms
     
     # Subtest: hyphenate pertumbuhan
         ok 1 - per­tum­buh­an
         1..1
-    ok 12 - hyphenate pertumbuhan # time=0.384ms
+    ok 12 - hyphenate pertumbuhan # time=3.027ms
     
     # Subtest: hyphenate kesehatan
         ok 1 - ke­se­hat­an
         1..1
-    ok 13 - hyphenate kesehatan # time=0.352ms
+    ok 13 - hyphenate kesehatan # time=1.521ms
     
     1..13
-ok 3 - Indonesian kata berimbuhan (affixed words) # time=20.445ms
+ok 3 - Indonesian kata berimbuhan (affixed words) # time=72.164ms
 
 # Subtest: Indonesian kata majemuk (compound words with hyphen)
     # Subtest: hyphenate kereta-api
         ok 1 - kereta-​api
         1..1
-    ok 1 - hyphenate kereta-api # time=0.859ms
+    ok 1 - hyphenate kereta-api # time=2.397ms
     
     # Subtest: hyphenate rumah-sakit
         ok 1 - rumah-​sakit
         1..1
-    ok 2 - hyphenate rumah-sakit # time=0.304ms
+    ok 2 - hyphenate rumah-sakit # time=0.887ms
     
     1..2
-ok 4 - Indonesian kata majemuk (compound words with hyphen) # time=9.084ms
+ok 4 - Indonesian kata majemuk (compound words with hyphen) # time=20.407ms
 
 # Subtest: Indonesian full paragraph from testsuite
     # Subtest: hyphenate full paragraph
         ok 1 - Ti|po|gra|fi, seni cetak atau tata huruf a|da|lah suatu ke|se|ni|an dan tek|nik me|mi|lih dan me|na|ta huruf de|ngan peng|a|tur|an pe|nye|bar|an|nya pada ruang yang ter|se|di|a, untuk men|cip|ta|kan kesan ter|ten|tu, guna ke|nya|man|an mem|ba|ca se|mak|si|mal mung|kin.
         1..1
-    ok 1 - hyphenate full paragraph # time=0.721ms
+    ok 1 - hyphenate full paragraph # time=1.106ms
     
     1..1
-ok 5 - Indonesian full paragraph from testsuite # time=7.967ms
+ok 5 - Indonesian full paragraph from testsuite # time=18.286ms
 
 # Subtest: Indonesian edge cases
     # Subtest: short word: Seni (5 chars, below default minWordLength 6)
         ok 1 - Seni
         1..1
-    ok 1 - short word: Seni (5 chars, below default minWordLength 6) # time=0.275ms
+    ok 1 - short word: Seni (5 chars, below default minWordLength 6) # time=0.761ms
     
     # Subtest: short word: cetak (5 chars)
         ok 1 - cetak
         1..1
-    ok 2 - short word: cetak (5 chars) # time=0.239ms
+    ok 2 - short word: cetak (5 chars) # time=0.815ms
     
     # Subtest: short word: tata (4 chars)
         ok 1 - tata
         1..1
-    ok 3 - short word: tata (4 chars) # time=0.339ms
+    ok 3 - short word: tata (4 chars) # time=0.72ms
     
     # Subtest: short word: huruf (5 chars)
         ok 1 - huruf
         1..1
-    ok 4 - short word: huruf (5 chars) # time=0.335ms
+    ok 4 - short word: huruf (5 chars) # time=0.656ms
     
     # Subtest: short word: yang (4 chars)
         ok 1 - yang
         1..1
-    ok 5 - short word: yang (4 chars) # time=0.294ms
+    ok 5 - short word: yang (4 chars) # time=0.756ms
     
     # Subtest: short word: kin (3 chars)
         ok 1 - kin
         1..1
-    ok 6 - short word: kin (3 chars) # time=0.246ms
+    ok 6 - short word: kin (3 chars) # time=0.748ms
     
     # Subtest: empty string
         ok 1 - should be equal
         1..1
-    ok 7 - empty string # time=0.254ms
+    ok 7 - empty string # time=0.727ms
     
     1..7
-ok 6 - Indonesian edge cases # time=12.694ms
+ok 6 - Indonesian edge cases # time=29.434ms
 
 # Subtest: Indonesian: set minWordLength
     # Subtest: short word with minWordLength 4: Seni
         ok 1 - Se|ni
         1..1
-    ok 1 - short word with minWordLength 4: Seni # time=0.734ms
+    ok 1 - short word with minWordLength 4: Seni # time=1.744ms
     
     # Subtest: short word with minWordLength 4: tata
         ok 1 - ta|ta
         1..1
-    ok 2 - short word with minWordLength 4: tata # time=0.336ms
+    ok 2 - short word with minWordLength 4: tata # time=1.148ms
     
     1..2
-ok 7 - Indonesian: set minWordLength # time=10.041ms
+ok 7 - Indonesian: set minWordLength # time=21.187ms
 
 # Subtest: Indonesian: set custom hyphen character
     # Subtest: hyphenate with middle dot
         ok 1 - tek·no·lo·gi
         1..1
-    ok 1 - hyphenate with middle dot # time=0.429ms
+    ok 1 - hyphenate with middle dot # time=0.685ms
     
     1..1
-ok 8 - Indonesian: set custom hyphen character # time=7.824ms
+ok 8 - Indonesian: set custom hyphen character # time=15.782ms
 
 # Subtest: Indonesian: leftmin and rightmin
     # Subtest: apply leftmin: pendidikan
         ok 1 - pendi|dikan
         1..1
-    ok 1 - apply leftmin: pendidikan # time=0.558ms
+    ok 1 - apply leftmin: pendidikan # time=0.647ms
     
     # Subtest: apply leftmin: teknologi
         ok 1 - tekno|logi
         1..1
-    ok 2 - apply leftmin: teknologi # time=0.754ms
+    ok 2 - apply leftmin: teknologi # time=0.42ms
     
     1..2
-ok 9 - Indonesian: leftmin and rightmin # time=11.39ms
+ok 9 - Indonesian: leftmin and rightmin # time=14.345ms
 
 # Subtest: Indonesian: special characters
     # Subtest: kata dengan angka: RT01/RW02
         ok 1 - RT01/RW02
         1..1
-    ok 1 - kata dengan angka: RT01/RW02 # time=0.333ms
+    ok 1 - kata dengan angka: RT01/RW02 # time=0.819ms
     
     # Subtest: kata dengan angka: 12345
         ok 1 - 12345
         1..1
-    ok 2 - kata dengan angka: 12345 # time=0.291ms
+    ok 2 - kata dengan angka: 12345 # time=0.785ms
     
     # Subtest: kata dengan angka: UUD1945
         ok 1 - UUD1945
         1..1
-    ok 3 - kata dengan angka: UUD1945 # time=0.335ms
+    ok 3 - kata dengan angka: UUD1945 # time=0.773ms
     
     # Subtest: singkatan: dll.
         ok 1 - dll.
         1..1
-    ok 4 - singkatan: dll. # time=0.27ms
+    ok 4 - singkatan: dll. # time=1.579ms
     
     # Subtest: singkatan: dst.
         ok 1 - dst.
         1..1
-    ok 5 - singkatan: dst. # time=0.255ms
+    ok 5 - singkatan: dst. # time=0.97ms
     
     # Subtest: kata dengan tanda seru: hebat!
         ok 1 - hebat!
         1..1
-    ok 6 - kata dengan tanda seru: hebat! # time=0.243ms
+    ok 6 - kata dengan tanda seru: hebat! # time=0.918ms
     
     # Subtest: kata dengan tanda tanya: apa?
         ok 1 - apa?
         1..1
-    ok 7 - kata dengan tanda tanya: apa? # time=0.617ms
+    ok 7 - kata dengan tanda tanya: apa? # time=0.883ms
     
     1..7
-ok 10 - Indonesian: special characters # time=14.484ms
+ok 10 - Indonesian: special characters # time=31.342ms
 
-1..10
+# Subtest: Indonesian: KBBI exception overrides
+    # Subtest: hyphenate makanan
+        ok 1 - ma­kan­an
+        1..1
+    ok 1 - hyphenate makanan # time=1.845ms
+    
+    # Subtest: hyphenate kepintaran
+        ok 1 - ke­pin­tar­an
+        1..1
+    ok 2 - hyphenate kepintaran # time=0.825ms
+    
+    # Subtest: hyphenate pembunuhan
+        ok 1 - pem­bu­nu­han
+        1..1
+    ok 3 - hyphenate pembunuhan # time=0.776ms
+    
+    # Subtest: hyphenate rau
+        ok 1 - ra­u
+        1..1
+    ok 4 - hyphenate rau # time=0.723ms
+    
+    # Subtest: hyphenate rei
+        ok 1 - re­i
+        1..1
+    ok 5 - hyphenate rei # time=0.927ms
+    
+    # Subtest: hyphenate bung
+        ok 1 - bu­ng
+        1..1
+    ok 6 - hyphenate bung # time=0.832ms
+    
+    # Subtest: hyphenate tedeum
+        ok 1 - te­deum
+        1..1
+    ok 7 - hyphenate tedeum # time=0.835ms
+    
+    # Subtest: hyphenate anginangin
+        ok 1 - angin­angin
+        1..1
+    ok 8 - hyphenate anginangin # time=1.104ms
+    
+    # Subtest: hyphenate asalusul
+        ok 1 - asal­usul
+        1..1
+    ok 9 - hyphenate asalusul # time=0.887ms
+    
+    # Subtest: hyphenate jalanjalan
+        ok 1 - jalan­jalan
+        1..1
+    ok 10 - hyphenate jalanjalan # time=1.121ms
+    
+    # Subtest: hyphenate tsetse
+        ok 1 - tse­tse
+        1..1
+    ok 11 - hyphenate tsetse # time=1.316ms
+    
+    # Subtest: hyphenate boogiewoogie
+        ok 1 - boogie­woogie
+        1..1
+    ok 12 - hyphenate boogiewoogie # time=0.941ms
+    
+    # Subtest: hyphenate dday
+        ok 1 - d­day
+        1..1
+    ok 13 - hyphenate dday # time=1.286ms
+    
+    # Subtest: hyphenate kpop
+        ok 1 - k­pop
+        1..1
+    ok 14 - hyphenate kpop # time=1.106ms
+    
+    # Subtest: hyphenate paopao
+        ok 1 - pao­pao
+        1..1
+    ok 15 - hyphenate paopao # time=1.232ms
+    
+    # Subtest: hyphenate kenapakenapa
+        ok 1 - kenapa­kenapa
+        1..1
+    ok 16 - hyphenate kenapakenapa # time=1.198ms
+    
+    # Subtest: hyphenate kemusyrikan
+        ok 1 - ke­musy­rik­an
+        1..1
+    ok 17 - hyphenate kemusyrikan # time=1.088ms
+    
+    # Subtest: hyphenate ularularan
+        ok 1 - u­lar­u­lar­an
+        1..1
+    ok 18 - hyphenate ularularan # time=0.893ms
+    
+    # Subtest: hyphenate aidemémoire
+        ok 1 - aide­mémoire
+        1..1
+    ok 19 - hyphenate aidemémoire # time=1.168ms
+    
+    1..19
+ok 11 - Indonesian: KBBI exception overrides # time=61.886ms
+
+1..11

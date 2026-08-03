@@ -2218,6 +2218,7 @@ ai-la-ku-a
 ai-lu-ro-fi-li-a
 ai-lu-ro-fo-bi-a
 ai-si-bi-a
+aide-mémoire
 aik-mo-fo-bi-a
 ak-la-si-a
 ak-lor-hi-dri-a
@@ -2237,6 +2238,7 @@ al-ge-si-a
 al-go-fo-bi-a
 al-ka-le-mi-a
 al-ki-mi-a
+al-lail
 al-wa-si-a
 am-bli-ge-us-ti-a
 am-bli-ku-si-a
@@ -2248,6 +2250,7 @@ am-ne-si-a
 am-se-ma-i
 an-bi-a
 an-co-a
+an-dos-torang
 an-dro-fi-li-a
 an-dro-fo-bi-a
 an-he-do-ni-a
@@ -2278,6 +2281,7 @@ ang-lo-fi-li-a
 ang-lo-fo-bi-a
 ang-ro-fo-bi-a
 ang-si-o
+angin-angin
 ap-he-li-o-tro-pis-me
 ap-la-si-a
 ap-ne-a
@@ -2299,6 +2303,7 @@ as-te-ra-se-a-e
 as-tra-fo-bi-a
 as-tro-fi-li-a
 as-tro-fo-bi-a
+asal-usul
 at-re-si-a
 au-au
 au-di-o
@@ -2310,6 +2315,7 @@ au-ro-fo-bi-a
 au-to-fo-bi-a
 au-to-ma-to-no-fo-bi-a
 au-to-mi-so-fo-bi-a
+avant-garde
 b-k-p-h
 ba-bu-ru-a
 ba-du-i
@@ -2353,6 +2359,8 @@ bang-ops
 bang-ops-tik
 bat-mo-fo-bi-a
 bat-ra-ko-fo-bi-a
+batu-batuan
+bbn-kb
 be-a
 be-be-ra-pa
 be-go-ni-a
@@ -2413,6 +2421,7 @@ bo-li-vi-a
 bo-ta-no-fo-bi-a
 bo-ti-a
 boh-si-a
+boogie-woogie
 bor-ne-o
 bos-ni-a
 bra-di-kar-di-a
@@ -2423,10 +2432,12 @@ bron-to-fo-bi-a
 bu-fo-no-fo-bi-a
 bu-i
 bu-li-mi-a
+bu-ng
 bul-ga-ri-a
 bung-gu-a
 ca-o
 cam-ca-o
+cd-rom
 ce-i-ma-fo-bi-a
 ce-lol-me-o
 ce-rong-gah
@@ -2435,15 +2446,19 @@ ce-ruk-an
 ce-te-ri-a
 cen-de-ki-a
 cen-di-ki-a
+cengkung-cengking
+cengkung-mengkung
 ci-a
 ci-e
 ci-po-a
 ci-u
+co-branding
 cow-cow
 cu-a
 cu-e
 cu-i
 cu-ni-a
+d-day
 da-di-a
 da-e
 da-i
@@ -3200,6 +3215,7 @@ en-do-fa-si-a
 en-do-kar-di-a
 en-sik-lo-pe-di-a
 en-to-mo-fo-bi-a
+engah-engah
 er-ga-si-o-fo-bi-a
 er-go-fo-bi-a
 er-mi-to-fo-bi-a
@@ -3274,6 +3290,9 @@ ge-ri-a
 ge-ron-to-fo-bi-a
 ge-rong-gang
 ge-rong-gong
+geliang-geliut
+geliat-geliut
+genjang-genjot
 geo-ki-mi-a-wi
 ger-ma-fo-bi-a
 ger-ma-no-fo-bi-a
@@ -3299,6 +3318,7 @@ ha-de-fo-bi-a
 ha-fe-fo-bi-a
 ha-li-a
 ha-mar-to-fo-bi-a
+ha-ng
 ha-ri-h
 hap-to-fo-bi-a
 har-pak-so-fo-bi-a
@@ -3397,6 +3417,7 @@ hip-si-fo-bi-a
 hir-su-to-fi-li-a
 his-te-ri-a
 his-to-ki-mi-a
+hitler-jugend
 ho-bo-fo-bi-a
 ho-do-fo-bi-a
 ho-mi-lo-fo-bi-a
@@ -3931,6 +3952,7 @@ im-pre-sa-ri-o
 in-de-ter-mi-nis-me
 in-di-a
 in-di-e
+in-do-chi-na
 in-do-ne-si-a
 in-dri-a
 in-er-si-a
@@ -3946,13 +3968,16 @@ in-teg-ra-si-o-nis
 in-ter-me-dia-si
 in-ter-pi-u
 in-ter-vi-u
+inang-inang
 ir-lan-di-a
 is-ke-mi-a
 is-la-mo-fo-bi-a
 is-lan-di-a
 ja-lab-ri-a
+jalan-jalan
 ju-a
 k-bray
+k-pop
 ka-ba-e-a
 ka-e-to-fo-bi-a
 ka-fe-ta-ri-a
@@ -3999,7 +4024,7 @@ ke-lu-a
 ke-men-ke-u
 ke-musy-rik-an
 ke-no-fo-bi-a
-ke-pin-ta-ran
+ke-pin-tar-an
 ke-ra-to-ma-la-si-a
 ke-ra-u-no-fo-bi-a
 ke-ro-fo-bi-a
@@ -4012,6 +4037,8 @@ ke-ter-ping-gir-an
 ke-ter-se-ba-ran
 ke-to-ne-mi-a
 ke-to-nu-ri-a
+kenapa-kenapa
+kerut-merut
 ki-a
 ki-a-ki-a
 ki-mi-a
@@ -4106,6 +4133,7 @@ lan-ci-a
 lan-si-a
 lang-ci-a
 lang-ka-na-e
+langue-parole
 lat-vi-a
 le-gi-o
 le-ke-mi-a
@@ -4149,8 +4177,8 @@ ma-fi-a
 ma-ge-i-ro-ko-fo-bi-a
 ma-hi-a
 ma-i-e-si-o-fi-li-a
-ma-ka-nan
 ma-ka-o
+ma-kan-an
 ma-la-ri-a
 ma-la-si-a
 ma-lai-kat
@@ -4163,6 +4191,7 @@ ma-ni-a-fo-bi-a
 ma-nu-mi-si-o
 ma-nu-si-a
 ma-ri-a
+ma-rind-anim
 ma-sam-bi-a
 ma-ta-ka-o
 ma-u
@@ -4888,6 +4917,8 @@ me-was-pa-da-i
 me-wi-la-yah-i
 me-ya-kin-i
 me-ya-kin-ya-kin-i
+meet-the-press
+mejuah-juah
 mem-ba-bat-i
 mem-ba-ca-i
 mem-ba-ik-i
@@ -5410,9 +5441,11 @@ menga-ran-ti-na
 menga-tas-i
 mengo-la-bo-ra-si
 mer-tu-a
+merem-merem
 met-ro-fi-li-a
 met-ro-fo-bi-a
 met-ro-ra-gi-a
+mezzo-soprano
 mi-al-gi-a
 mi-e
 mi-ko-fo-bi-a
@@ -5437,6 +5470,7 @@ mik-ro-ne-si-a
 mik-ro-sko-pis
 mik-rop-si-a
 mik-so-fo-bi-a
+milang-miling
 mir-me-ko-fi-li-a
 mir-me-ko-fo-bi-a
 mne-mo-fo-bi-a
@@ -5490,6 +5524,7 @@ no-ver-ka-fo-bi-a
 nok-ti-fi-li-a
 nok-ti-fo-bi-a
 nok-tu-ri-a
+non-euclidean
 non-ki-mi-a
 nor-we-gi-a
 nos-tal-gi-a
@@ -5912,6 +5947,7 @@ o-zo-no-me-ter
 o-zo-no-skop
 o-zon
 of-tal-mi-a
+off-the-record
 ok-lo-fo-bi-a
 ok-si-tet-ra-si-klin
 ok-to-fo-bi-a
@@ -5928,6 +5964,7 @@ os-mo-fo-bi-a
 os-te-o-ma-la-si-a
 os-te-o-pe-ni-a
 os-tra-ko-no-fo-bi-a
+oseng-oseng
 pa-do-e
 pa-go-fo-bi-a
 pa-kam-bi-a
@@ -5968,10 +6005,12 @@ pan-fo-bi-a
 pan-le-u-ko-pe-ni-a
 pan-sper-mi-a
 pan-to-fo-bi-a
+pao-pao
 par-k
 par-le-men-ta-ri-a
 par-te-no-fo-bi-a
 par-tu-ri-fo-bi-a
+passe-partout
 pat-ro-io-fo-bi-a
 pat-ta-e
 pe-di-ku-lo-fo-bi-a
@@ -6045,6 +6084,7 @@ pi-rek-si-o-fo-bi-a
 pi-ro-fo-bi-a
 pi-ro-ma-ni-a
 pi-u-ri-a
+piut-miut
 pla-ko-fo-bi-a
 pla-na-ri-a
 pla-te-a
@@ -6101,6 +6141,7 @@ pte-ro-no-fo-bi-a
 pu-ni-a
 pu-o
 pu-pa-fo-bi-a
+push-up
 ra-di-kal-is-me
 ra-di-o
 ra-di-o-fo-bi-a
@@ -6114,12 +6155,14 @@ ra-ma-ni-a
 ra-ni-da-fo-bi-a
 ra-si-o
 ra-tum-ba-nu-a
+ra-u
 ra-zi-a
 raf-le-si-a
 rah-si-a
 re-a
 re-a-gen-si-a
 re-gi-o
+re-i
 re-me-ni-a
 re-o-fi-li-a
 re-vi-u
@@ -6148,6 +6191,8 @@ sang-ri-a
 sar-ko-fi-li-a
 sar-ko-pe-ni-a
 sat-ri-a
+savoi-faire
+savoi-vivre
 se-ba-ha-gi-a
 se-ba-u
 se-bar-an
@@ -6177,9 +6222,16 @@ se-ti-a
 se-tu-a
 sek-so-fo-bi-a
 sek-som-ni-a
+selap-selip
+selit-belit
+selit-sepit
 sem-be-rap
+senget-menget
+senguk-sengak
 sep-ti-se-mi-a
 ser-ba-du-a
+serak-serik
+serak-seruk
 sfek-so-fo-bi-a
 si-a
 si-a-no-fo-bi-a
@@ -6206,12 +6258,14 @@ si-pe-ra-se-a-e
 si-to-fo-bi-a
 si-to-ki-mi-a
 si-to-ma-ni-a
+sidik-midik
 sik-lo-fo-bi-a
 sim-bo-lo-fo-bi-a
 sim-bu-a
 sim-pli-si-a
 sin-ci-a
 sin-tu-a
+sinar-x
 sip-ri-do-fo-bi-a
 ska-bi-o-fo-bi-a
 skan-di-na-vi-a
@@ -6226,6 +6280,7 @@ sko-ri-a
 sko-to-ma-fo-bi-a
 sko-to-pi-a
 skor-pi-o
+slash-and-burn
 slo-ve-ni-a
 slo-wa-ki-a
 so-a
@@ -6263,6 +6318,7 @@ su-per-be-nu-a
 su-po-si-to-ri-a
 su-ri-fo-bi-a
 sum-pi-a
+susup-sasap
 swe-di-a
 sya-fi-i
 ta-bi-a
@@ -6289,11 +6345,14 @@ ta-su-a
 ta-u-ro-fo-bi-a
 tak-ce-ri-a
 tak-ter-se-di-a
+tali-tali
 tan-di-a
 tan-za-ni-a
 tang-ku-e
 tar-fi-a
+tarik-ulur
 te-ber-kah-i
+te-deum
 te-fe-u
 te-ku-a
 te-le-fo-no-fo-bi-a
@@ -6374,6 +6433,7 @@ tris-ka-i-de-ka-fo-bi-a
 tro-ke-a
 trom-bo-si-te-mi-a
 trom-bo-si-to-pe-ni-a
+tse-tse
 tu-a
 tu-a-tu-a
 tu-ber-ku-lo-fo-bi-a
@@ -6534,8 +6594,10 @@ u-lang-a-ling
 u-lang-alik
 u-lang-an
 u-lang-u-lang
+u-lap-u-lap
 u-lar
 u-lar-u-lar
+u-lar-u-lar-an
 u-las
 u-las-an
 u-lat
@@ -6870,6 +6932,7 @@ vir-gi-ni-a
 vir-gi-ni-ti-fo-bi-a
 vit-ri-ko-fo-bi-a
 vo-ka-li-a
+volte-face
 vul-vo-di-ni-a
 wa-di-la-e
 wa-la-o
@@ -6898,6 +6961,7 @@ xi-ro-fo-bi-a
 y-t-m
 ya-nyi-o
 yang-yang
+yaumul-zalzalah
 yin-yang
 yo-gi-a
 yor-da-ni-a

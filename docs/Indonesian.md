@@ -46,23 +46,25 @@ const hyphenator = hyphenopoly.config({
 
 const hyphenateId = await hyphenator.get("id");
 console.log(hyphenateId("Tipografi adalah seni dan teknik memilih dan menata huruf."));
-// Output: Ti·po·gra·fi ada·lah seni dan tek·nik me·mi·lih dan me·na·ta hu·ruf.
+// Output: Ti·po·gra·fi a·da·lah seni dan tek·nik me·mi·lih dan me·na·ta hu·ruf.
 ```
 
 ## Examples
 
 | Kata | Hasil |
 |------|-------|
-| Indonesia | In·do·ne·sia |
-| pendidikan | pen·di·di·kan |
+| Indonesia | In·do·ne·si·a |
+| pendidikan | pen·di·dik·an |
 | teknologi | tek·no·lo·gi |
-| pemerintahan | pe·me·rin·ta·han |
+| pemerintahan | pe·me·rin·tah·an |
 | kemerdekaan | ke·mer·de·ka·an |
-| pembelajaran | pem·be·la·ja·ran |
-| perkembangan | per·kem·ban·gan |
-| pengembangan | pen·gem·ban·gan |
+| pembelajaran | pem·bel·a·jar·an |
+| perkembangan | per·kem·bang·an |
+| pengembangan | pe·ngem·bang·an |
 | menciptakan | men·cip·ta·kan |
 | kesenian | ke·se·ni·an |
+| makanan | ma·kan·an |
+| kepintaran | ke·pin·tar·an |
 
 ## Kata Majemuk (Compound Words)
 
@@ -133,5 +135,5 @@ The following 52 words have been validated against the patterns:
 
 1. **Short words**: Words with fewer than 6 characters are not hyphenated by default. Adjust `minWordLength` if needed.
 2. **Compound words**: Hyphenated compound words (e.g., kereta-api) preserve the existing hyphen but do not add additional hyphenation points within each component.
-3. **Alphabet**: Only Latin characters (a-z, A-Z) are supported. No special Indonesian characters are needed as Indonesian uses standard Latin alphabet.
+3. **Alphabet**: Latin (a-z, A-Z) plus `ê`, `ü`, `é`. Numbers and symbols are not hyphenated.
 4. **Pattern source**: Based on KBBI 2025 data. Some very new or informal words may not hyphenate optimally.

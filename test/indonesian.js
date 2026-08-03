@@ -347,3 +347,90 @@ t.test("Indonesian: special characters", async function (t) {
     });
     t.end();
 });
+
+t.test("Indonesian: KBBI exception overrides", async function (t) {
+    const H9Y = await freshImport();
+    const hc = H9Y.config({
+        loader,
+        "minWordLength": 2,
+        "require": ["id"]
+    });
+    const idHyphenator = await hc.get("id");
+    t.test("hyphenate makanan", function (t) {
+        t.equal(idHyphenator("makanan"), "ma\u00ADkan\u00ADan", idHyphenator("makanan"));
+        t.end();
+    });
+    t.test("hyphenate kepintaran", function (t) {
+        t.equal(idHyphenator("kepintaran"), "ke\u00ADpin\u00ADtar\u00ADan", idHyphenator("kepintaran"));
+        t.end();
+    });
+    t.test("hyphenate pembunuhan", function (t) {
+        t.equal(idHyphenator("pembunuhan"), "pem\u00ADbu\u00ADnu\u00ADhan", idHyphenator("pembunuhan"));
+        t.end();
+    });
+    t.test("hyphenate rau", function (t) {
+        t.equal(idHyphenator("rau"), "ra\u00ADu", idHyphenator("rau"));
+        t.end();
+    });
+    t.test("hyphenate rei", function (t) {
+        t.equal(idHyphenator("rei"), "re\u00ADi", idHyphenator("rei"));
+        t.end();
+    });
+    t.test("hyphenate bung", function (t) {
+        t.equal(idHyphenator("bung"), "bu\u00ADng", idHyphenator("bung"));
+        t.end();
+    });
+    t.test("hyphenate tedeum", function (t) {
+        t.equal(idHyphenator("tedeum"), "te\u00ADdeum", idHyphenator("tedeum"));
+        t.end();
+    });
+    t.test("hyphenate anginangin", function (t) {
+        t.equal(idHyphenator("anginangin"), "angin\u00ADangin", idHyphenator("anginangin"));
+        t.end();
+    });
+    t.test("hyphenate asalusul", function (t) {
+        t.equal(idHyphenator("asalusul"), "asal\u00ADusul", idHyphenator("asalusul"));
+        t.end();
+    });
+    t.test("hyphenate jalanjalan", function (t) {
+        t.equal(idHyphenator("jalanjalan"), "jalan\u00ADjalan", idHyphenator("jalanjalan"));
+        t.end();
+    });
+    t.test("hyphenate tsetse", function (t) {
+        t.equal(idHyphenator("tsetse"), "tse\u00ADtse", idHyphenator("tsetse"));
+        t.end();
+    });
+    t.test("hyphenate boogiewoogie", function (t) {
+        t.equal(idHyphenator("boogiewoogie"), "boogie\u00ADwoogie", idHyphenator("boogiewoogie"));
+        t.end();
+    });
+    t.test("hyphenate dday", function (t) {
+        t.equal(idHyphenator("dday"), "d\u00ADday", idHyphenator("dday"));
+        t.end();
+    });
+    t.test("hyphenate kpop", function (t) {
+        t.equal(idHyphenator("kpop"), "k\u00ADpop", idHyphenator("kpop"));
+        t.end();
+    });
+    t.test("hyphenate paopao", function (t) {
+        t.equal(idHyphenator("paopao"), "pao\u00ADpao", idHyphenator("paopao"));
+        t.end();
+    });
+    t.test("hyphenate kenapakenapa", function (t) {
+        t.equal(idHyphenator("kenapakenapa"), "kenapa\u00ADkenapa", idHyphenator("kenapakenapa"));
+        t.end();
+    });
+    t.test("hyphenate kemusyrikan", function (t) {
+        t.equal(idHyphenator("kemusyrikan"), "ke\u00ADmusy\u00ADrik\u00ADan", idHyphenator("kemusyrikan"));
+        t.end();
+    });
+    t.test("hyphenate ularularan", function (t) {
+        t.equal(idHyphenator("ularularan"), "u\u00ADlar\u00ADu\u00ADlar\u00ADan", idHyphenator("ularularan"));
+        t.end();
+    });
+    t.test("hyphenate aidemémoire", function (t) {
+        t.equal(idHyphenator("aidemémoire"), "aide\u00ADmémoire", idHyphenator("aidemémoire"));
+        t.end();
+    });
+    t.end();
+});
